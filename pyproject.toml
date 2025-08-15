@@ -1,0 +1,29 @@
+[project]
+name = "llm-job-assistant"
+version = "0.1.0"
+description = "An LLM-powered assistant that turns saved job postings into an interactive knowledge base and career insights tool."
+authors = [
+    {name = "Daniel Ekwuazi",email = "danielekwuazi@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = "~3.11"
+dependencies = [
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-openai (>=0.3.30,<0.4.0)",
+    "streamlit (>=1.48.1,<2.0.0)",
+    "chromadb (>=1.0.17,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.12.9"
+black = "^25.1.0"
+pre-commit = "^4.3.0"
+pytest = "^8.4.1"
+
