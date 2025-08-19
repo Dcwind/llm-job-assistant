@@ -29,3 +29,6 @@ black = "^25.1.0"
 pre-commit = "^4.3.0"
 pytest = "^8.4.1"
 
+[tool.poetry.scripts]
+start = "llm_job_assistant.cli:main"
+ingest = "llm_job_assistant.ingest:main"
