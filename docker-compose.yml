@@ -1,0 +1,23 @@
+# Specifies the version of the Docker Compose file format.
+version: "3.9"
+
+# Defines the services (containers) that make up your application.
+services:
+  # Defines the main application service.
+  app:
+    # Tells Docker Compose to build the image from the Dockerfile in the current directory.
+    build: .
+    # Sets a friendly name for the container.
+    container_name: jobsift_app
+    # Forwards port 8501 from the container to port 8501 on your host machine,
+    # so you can access the Streamlit UI in your browser.
+    ports:
+      - "8501:8501"
+    # Mounts the local 'chroma' directory into the container at /app/chroma.
+    # This ensures that your vector database is persistent and not lost when the container stops.
+    volumes:
+      - ./chroma:/app/chroma
+    # Loads environment variables from your local .env file into the container.
+    # This securely passes your OpenAI API key to the application.
+    env_file:
+      - .env
