@@ -209,6 +209,84 @@ llm-job-assistant-main/
 
 ---
 
+## Screenshots
+
+### Web Interface
+
+**Main Application Interface**
+
+![Streamlit Web Interface](./assets/screenshots/streamlit-web-interface.png)
+
+*The main Streamlit interface where users can ask questions about their job postings and receive AI-powered insights.*
+
+**Information Not Found Response**
+
+![Information Not Found](./assets/screenshots/streamlit-web-interface-notfound.png)
+
+*When the system cannot find relevant information, it provides a helpful fallback message to guide users.*
+
+---
+
+### Development & Processing
+
+**Document Ingestion Success**
+
+![Ingestion Process](./assets/screenshots/ingestion.png)
+
+*Successful completion of the document ingestion process, showing job descriptions being processed and stored in the vector database.*
+
+**Core RAG Pipeline**
+
+![Core RAG](./assets/screenshots/corerag.png)
+
+*The RAG (Retrieval-Augmented Generation) pipeline running successfully, demonstrating the system's ability to retrieve and generate responses.*
+
+---
+
+### Query Processing & Multi-Query Retrieval
+
+**Query Rewrite Feature**
+
+![Query Rewrite](./assets/screenshots/queryrewrite.png)
+
+*Demonstration of the multi-query retrieval system that automatically reformulates user questions for better results.*
+
+**Enhanced Query Processing**
+
+![Query Rewrite 2](./assets/screenshots/queryrewrite2.png)
+
+*Advanced query rewriting showing how the system generates multiple perspectives of the same question.*
+
+**Multi-Query Retrieval in Action**
+
+![Query Rewrite 3](./assets/screenshots/queryrewrite3.png)
+
+*The multi-query retrieval system working to improve answer quality by exploring different semantic angles.*
+
+**Fallback Response**
+
+![Information Not Found](./assets/screenshots/queryrewrite4-informationnotfound.png)
+
+*When information cannot be found despite query reformulation, the system provides appropriate feedback.*
+
+---
+
+### Development Tools & Monitoring
+
+**Code Quality with Pre-commit**
+
+![Pre-commit with Ruff](./assets/screenshots/precommit.png)
+
+*Pre-commit hooks running with Ruff linter to maintain code quality and consistency.*
+
+**OpenAI API Usage Dashboard**
+
+![OpenAI API Usage](./assets/screenshots/openaiapi.png)
+
+*OpenAI API usage monitoring dashboard showing token consumption and API calls for cost tracking.*
+
+---
+
 ## License
 
 This project is licensed under the MIT License.
